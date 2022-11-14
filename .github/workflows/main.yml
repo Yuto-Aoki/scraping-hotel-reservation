@@ -2,9 +2,8 @@
 name: scraping_bot
 on:
   push:
-  schedule:
-    # 定期実行する時間・・・①
-    - cron: '0 22 * * *'
+    paths:
+      - '**.py'
 
 jobs:
   build:
